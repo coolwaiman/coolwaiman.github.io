@@ -1,0 +1,166 @@
+/* By HUNG WAI MAN 1155085664 */
+* {
+    color:darkslategrey;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Lacquer', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#intro {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+#intro div div {
+    padding:1px;
+    margin:1px;
+}
+.flex-left {
+    text-align: right;
+}
+
+.mp-0 {
+    margin: 0;
+}
+
+.flex-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.flex-right * {
+    padding:1px;
+    margin:1px;
+}
+
+#intro img {
+    height: auto;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid green;
+}
+
+#main {
+    margin: 8px auto 8px auto;
+    text-align: left;
+    max-width: 1000px;
+
+}
+
+header {
+    background-image: url('header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100vw;
+    display: table-cell; 
+    vertical-align: bottom;
+    border-bottom: 5px solid green;
+    margin-bottom: 8px;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    margin: 30px;
+}
+
+#hash {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hash span{
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+#nav,nav {
+    padding: 16px;
+    width: 100vw;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+#nav span {
+    width: 25%;
+}
+#nav > nav > span > a {
+    color: white;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+#nav > nav > span > a:hover {
+    color: yellow;
+    text-decoration: underline;
+    transition: 300ms;
+    
+}
+
+header h1, header h3 {
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* For mobile phones: */
+.d-none { 
+    display: none;
+}
+
+.d-table-cell { 
+    display: table-cell;
+}
+  
+@media only screen and (min-width: 500px) {
+    /* For tablets: */
+    .d-s-table-cell {display: table-cell}
+    .d-s-none { 
+        display: none;
+    }
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 500px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
