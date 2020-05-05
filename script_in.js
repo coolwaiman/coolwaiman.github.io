@@ -1,4 +1,4 @@
 $(document).ready(function() {
     alert("Testing")
-    alert(document.cookie)
+    console.log(document.cookie)
 })
